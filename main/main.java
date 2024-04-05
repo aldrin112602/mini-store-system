@@ -6,11 +6,11 @@ public class Main {
         int bags = 10, shoes = 20, shirt = 20, jeans = 10, gloves = 5;  
         double cost[] = { 25.45, 67.64, 43.23, 24.12, 12.34 };
         System.out.println("Stocks:\t\t\t||Cost:");
-        System.out.println("Bags - 10\t\t||₱" + cost[0]);
-        System.out.println("Shoes - 20\t\t||₱" + cost[1]);
-        System.out.println("Shirt - 20\t\t||₱" + cost[2]);
-        System.out.println("Jeans - 10\t\t||₱" + cost[3]);
-        System.out.println("Gloves - 5\t\t||₱" + cost[4]);
+        System.out.println("Bags - 10\t\t||PHP" + cost[0]);
+        System.out.println("Shoes - 20\t\t||PHP" + cost[1]);
+        System.out.println("Shirt - 20\t\t||PHP" + cost[2]);
+        System.out.println("Jeans - 10\t\t||PHP" + cost[3]);
+        System.out.println("Gloves - 5\t\t||PHP" + cost[4]);
         double subtotal = 0, total = 0;
         while(true) {
          System.out.println("What would you like to buy?");
@@ -57,7 +57,7 @@ public class Main {
             }
            }
             total += subtotal;
-            System.out.println("Subtotal: ₱" + subtotal);
+            System.out.println("Subtotal: PHP" + subtotal);
             System.out.println("Would you like to buy again? (Y/N):");
             in.nextLine();
             String op = in.nextLine();
@@ -68,8 +68,8 @@ public class Main {
             
             
         }
-        System.out.println("The total is: ₱" + total);
-        System.out.print("Input payment: ₱");
+        System.out.println("The total is: PHP" + total);
+        System.out.print("Input payment: PHP");
         int payment = in.nextInt();
         System.out.println("Your change is: " + (payment - total));
         in.nextLine();
